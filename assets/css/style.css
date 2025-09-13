@@ -2293,7 +2293,7 @@ th, td {
     z-index: 10;
 }
 .box-header-nav .main-menu .submenu .toggle-submenu {
-    display: block;
+    display: inline;
 }
 .box-header-nav .main-menu .submenu .toggle-submenu::before {
     height: 30px;
@@ -2357,7 +2357,7 @@ th, td {
     height: 50px;
     text-align: center;
     color: #fff;
-    background-color: #71c0ef;
+    background-color: #a8dadc;
     border-radius: 50%;
     position: relative;
 }
@@ -13910,7 +13910,7 @@ body .az_toggle_default .az_toggle_content p:last-child {
     color: #fff;
     padding: 0 30px;
     border-radius: 30px;
-    background-color: #71c0ef;
+    background-color: #a8dadc;
     -webkit-transition: all 0.25s ease 0s;
     -moz-transition: all 0.25s ease 0s;
     -o-transition: all 0.25s ease 0s;
@@ -14378,7 +14378,7 @@ body .az_toggle_default .az_toggle_content p:last-child {
     padding-top: 35px;
 }
 .section-006 {
-    background-color: #b5def2;
+    background-color: #a8dadc;
 }
 .section-007 {
     padding-bottom: 75px;
@@ -14387,7 +14387,7 @@ body .az_toggle_default .az_toggle_content p:last-child {
     padding: 15px;
 }
 .section-009 {
-    background-color: #b5def2;
+    background-color: #a8dadc;
 }
 .section-010 {
     padding-top: 10px;
