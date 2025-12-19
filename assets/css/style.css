@@ -212,7 +212,7 @@ figure {
 .kodory-error .button, .kodory-info .button, .kodory-message .button {
     float: right;
     font-size: 14px;
-    display: inline-block;
+    display: block;
     padding: 0 14px;
     height: 30px;
     line-height: 30px;
@@ -238,6 +238,7 @@ input[type="search"],
 input[type="url"],
 textarea,
 select {
+    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
 }
@@ -1086,7 +1087,7 @@ article.sticky .post-title a::before {
 }
 .widget_shopping_cart .kodory-mini-cart__buttons .button {
     width: 50%;
-    display: inline-block;
+    display: block;
     float: left;
     font-size: 14px;
     text-transform: uppercase;
@@ -3218,7 +3219,7 @@ th, td {
     display: block;
     width: 60px;
     height: 60px;
-    vertical-align: middle;
+   /* vertical-align: middle; */
     position: absolute;
     top: 0;
     left: 0;
@@ -3459,7 +3460,7 @@ th, td {
         font-size: 18px;
         content: '\f105';
         font-family: FontAwesome, sans-serif;
-        display: inline-block;
+        display: block;
         float: right;
     }
 }
@@ -3704,7 +3705,7 @@ th, td {
     text-align: left;
 }
 .header.style-04 .phone-header .phone-icon {
-    display: inline-block;
+    display: block;
     text-align: center;
     float: left;
     font-size: 27px;
@@ -3892,9 +3893,9 @@ th, td {
     }
 }
 @media (max-width: 767px) {
-    .header-mobile {
-        /*table-layout: fixed;*/
-    }
+    /*.header-mobile {
+        table-layout: fixed;
+    }*/
     .header-mobile .header-mobile-left,
     .header-mobile .header-mobile-right {
         width: calc(50% - 65px);
@@ -5601,9 +5602,9 @@ ul.products li.product-category a .kodory-loop-category__title mark {
     vertical-align: top;
     display: inline-block;
 }
-.grid-view-mode .modes-mode::before {
+/* .grid-view-mode .modes-mode::before {
 
-}
+} */
 .grid-view-mode .modes-mode.mode-list {
     padding: 13px 9px;
 }
@@ -6438,7 +6439,7 @@ body.admin-bar #yith-quick-view-modal {
     text-transform: capitalize;
 }
 .product-item .variations .data-val label {
-    display: inline-block;
+    display: block;
     float: left;
     clear: both;
 }
@@ -7978,7 +7979,7 @@ div.quantity .input-qty {
     padding: 0 5px;
     text-align: center;
     border: none;
-    display: inline-block;
+    display: block;
     float: left;
     border-radius: 50%;
 }
@@ -8680,7 +8681,7 @@ p.stars a:hover ~ a:before, p.stars.selected:not(:hover) a.active ~ a:before {
 }
 .categories-product-dreaming .block-title a {
     float: right;
-    display: inline-block;
+    display: block;
     min-width: 122px;
     height: 38px;
     line-height: 36px;
@@ -9098,7 +9099,7 @@ body.kodory-cart .return-to-shop a:hover {
 }
 body.kodory-cart .no-sidebar .kodory-cart-form {
     float: left;
-    display: inline-block;
+    display: block;
     width: calc(100% - 359px)
 }
 body.kodory-cart .no-sidebar .cart-collaterals {
@@ -15522,7 +15523,7 @@ body .kodory-mapper .kodory-pin .kodory-popup .kodory-kodory-info .kodory-kodory
     text-align: left;
 }
 body .kodory-mapper .kodory-pin .kodory-popup .kodory-product-rating {
-    display: inline-block;
+    display: block;
     float: right;
     margin: 0;
     line-height: 27px;
