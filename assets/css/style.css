@@ -1532,7 +1532,7 @@ a, body .az_custom_heading a {
 a:hover, a:focus, a:active {
     text-decoration: none;
     outline: none;
-    color: #71c0ef;
+    color: #ed71a3;
 }
 h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
@@ -1686,7 +1686,7 @@ th, td {
     top: -88px;
     transform: translateY(-50%);
     z-index: 3;
-    background-color: #71c0ef;
+    background-color: #a8dadc;
     border-radius: 50%;
 }
 .owl-slick .slick-arrow::after {
@@ -2467,7 +2467,7 @@ th, td {
     text-align: center;
     padding: 0 10px;
     position: relative;
-    background-color: #71c0ef;
+    background-color: #a8dadc;
     z-index: 1;
     overflow: hidden;
     border-radius: 30px;
@@ -2490,7 +2490,7 @@ th, td {
     left: 0;
     right: 1px;
     bottom: 0;
-    border: 2px solid #b5def2;
+    border: 2px solid #a8dadc;
     z-index: 1;
     pointer-events: none;
     border-radius: 30px;
@@ -2737,7 +2737,7 @@ th, td {
     height: 0;
     border-width: 6px 5px;
     border-style: solid;
-    border-color: #b5def2 transparent transparent transparent;
+    border-color: #a8dadc transparent transparent transparent;
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-25%);
@@ -3997,7 +3997,7 @@ a.backtotop i {
     width: 4px;
     height: 4px;
     margin-left: 0;
-    background-color: #71c0ef;
+    background-color: #a8dadc;
     border-radius: 50%;
 }
 .post-item .post-author,
@@ -4371,7 +4371,7 @@ a.backtotop i {
     position: absolute;
     left: 0;
     bottom: 0;
-    border: 2px solid #71c0ef;
+    border: 2px solid #a8dadc;
     border-radius: 2px;
     width: 50px;
 }
@@ -6115,7 +6115,7 @@ body.admin-bar #yith-quick-view-modal {
     color: #8a8a8a;
 }
 .price ins {
-    color: #71c0ef;
+    color: #a8dadc;
     margin-right: 5px;
     text-decoration: none;
 }
@@ -6463,7 +6463,7 @@ body.admin-bar #yith-quick-view-modal {
     background-color: #fff;
 }
 .product-item.style-01 .product-inner:hover {
-    border-color: #71c0ef;
+    border-color: #a8dadc;
 }
 .product-item.style-01 .product-thumb {
     margin-bottom: 15px;
@@ -6986,7 +6986,7 @@ body.admin-bar #yith-quick-view-modal {
     overflow: hidden;
 }
 .product-item.style-06 .product-inner:hover {
-    border-color: #71c0ef;
+    border-color: #a8dadc;
 }
 .product-item.style-06 .product-thumb {
     float: left;
@@ -10927,7 +10927,7 @@ body.error404 .header {
     color: #fff;
     padding: 0 20px;
     border-radius: 30px;
-    background-color: #71c0ef;
+    background-color: #a8dadc;
     -webkit-transition: none;
     -moz-transition: none;
     -o-transition: none;
@@ -11775,7 +11775,7 @@ body.error404 .header {
     transform: translateX(-50%);
     border-radius: 2px;
     width: 70px;
-    border: 2px solid #71c0ef;
+    border: 2px solid #a8dadc;
 }
 .kodory-heading.style-01 .subtitle {
     max-width: 300px;
@@ -13126,7 +13126,7 @@ ul.products {
     font-size: 24px;
     line-height: 44px;
     color: #fff;
-    background-color: #71c0ef;
+    background-color: #a8dadc;
     text-align: center;
     position: relative;
 }
@@ -14440,7 +14440,7 @@ body .az_toggle_default .az_toggle_content p:last-child {
     padding: 5px 0;
 }
 .section-016 p a {
-    color: #71c0ef;
+    color: #a8dadc;
 }
 .section-017 {
     padding-left: 10px;
