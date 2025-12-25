@@ -15773,3 +15773,23 @@ body .kodory-mapper .text__area {
         padding: 30px 0 0 0;
     }
 }
+
+/*my modifications*/
+
+/* =====================================================
+   Force solid header on selected pages
+   ===================================================== */
+
+.force-solid-header .header-position {
+    background-color: #fff !important;
+}
+
+.force-solid-header .header-position.fixed,
+.force-solid-header .header-position:not(.fixed) {
+    background-color: #fff !important;
+}
+
+.main-container-solid-header {
+    padding-top: 125px;
+    padding-bottom: 70px;
+}
