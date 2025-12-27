@@ -7876,7 +7876,6 @@ body.admin-bar #yith-quick-view-modal {
     font-size: 13px;
     height: 24px;
     line-height: 26px;
-    text-transform: uppercase;
     letter-spacing: 0.1em;
 }
 .entry-summary form.cart.variations_form .variations .reset_variations:hover {
@@ -7896,12 +7895,12 @@ body.admin-bar #yith-quick-view-modal {
     overflow: hidden;
     position: relative;
     border-radius: 30px;
-    background-color: #a8dadc;
+    background-color: #25d366;
     font-family: 'Baloo 2', serif;
     font-weight: 700;
 }
 .entry-summary .cart .single_add_to_cart_button:hover {
-    background-color: #ed71a3;
+    background-color: #363636;
 }
 .entry-summary .cart .single_add_to_cart_button::after {
     content: '';
@@ -7918,9 +7917,9 @@ body.admin-bar #yith-quick-view-modal {
     font-weight: normal;
     display: inline-block;
     vertical-align: top;
-    margin-right: 9px;
-    font-family: 'Pe-icon-7-stroke', sans-serif;
-    content: "\e66e";
+    margin-right: 3px;
+    font-family: 'fontawesome', sans-serif;
+    content: "\f232";
     font-size: 21px;
 }
 .entry-summary .cart .single_add_to_cart_button.loading {
