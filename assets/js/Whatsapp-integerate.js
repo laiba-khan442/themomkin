@@ -21,9 +21,11 @@ const message =
 const phone = "923372179541";
 
 //url formation
-const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`; 
+function openWhatsApp() {
+  const whatsappURL =
+  `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  window.open(whatsappURL, "_blank");
+}
 
-window.open(url,"_blank"); 
-
-//sends url to the "order on whatsapp" button. 
-getElementById('order').addEventListener("click", url);
+document.getElementById('order')
+  .addEventListener("click", openWhatsApp);
