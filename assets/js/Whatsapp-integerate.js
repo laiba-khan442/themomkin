@@ -10,16 +10,21 @@ function openWhatsApp() {
     let color = document.getElementById('product_color').innerText;
     const qtyInput = document.querySelector("#product_quantity input.qty");
     const quantity = parseInt(qtyInput.value, 10);
-    let size = document.getElementById('product_size_select').value;
+    let size1 = document.getElementById('product_size_select').value;
+    let size; if (size1 == "newborn"){
+      size = `Size: ${size1} baby\n`; 
+    }else{ size = `Size: ${size1} years\n`};
 
 const message = 
 
     `Hi, I would like to place an order for\n` + 
     `Product: ${product}\n` +
     `SKU code: ${Sku}\n`+
-    `Amount: ${amount}\n` +
+    `Amount: Rs. ${amount}\n` +
+    `${size}`+
     `Color: ${color}\n`+
     `Quantity: ${quantity}\n` +
+    `${availability}\n`+
     `Can I get more information on this?`; 
 
 const phone = "923372179541";

@@ -2045,11 +2045,11 @@
                                                 <span class="qty-label">Quantity:</span>
                                                 <div class="control">
                                                     <a class="btn-number qtyminus quantity-minus" href="#">-</a>
-                                                    <input type="text" data-step="1" name="quantity[25]" value="0" title="Qty" class="input-qty input-text qty text" size="4" pattern="[0-9]*">
+                                                    <input type="number" data-step="1" name="quantity[25]" value="1" title="Qty" class="input-qty input-text qty text" size="4" pattern="[1-9]*" min='1' step="1">
                                                     <a class="btn-number qtyplus quantity-plus" href="#">+</a>
                                                 </div>
                                             </div>
-                                            <button type="submit"
+                                            <button type="button"
                                                     class="single_add_to_cart_button button alt kodory-variation-selection-needed" id = "order">
                                                 Order on WhatsApp
                                             </button>
