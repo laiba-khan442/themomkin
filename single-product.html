@@ -1944,13 +1944,11 @@
                             <div class="summary entry-summary">
                                 <div class="flash">
                                     <span class="onnew"><span class="text">New</span></span></div>
-                                <h1 class="product_title entry-title">T-shirt with skirt</h1>
+                                <h1 class="product_title entry-title" id = "product_name">T-shirt with skirt</h1>
                                 <p class="price"><span class="kodory-Price-amount amount"><span
-                                        class="kodory-Price-currencySymbol">$</span>146.00</span> – <span
-                                        class="kodory-Price-amount amount"><span
-                                        class="kodory-Price-currencySymbol">$</span>185.00</span></p>
+                                        class="kodory-Price-currencySymbol"> PKR </span><span id = "product_amount">1999</span></span></p>
                                 <p class="stock in-stock">
-                                    Availability: <span> In stock</span>
+                                    Availability: <span id = "product_avail">In Stock</span>
                                 </p>
                                 <div class="kodory-product-details__short-description">
                                     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
@@ -1967,7 +1965,7 @@
                                         <tbody>
                                         <tr>
                                             <td class="label"><label>Color</label></td>
-                                            <td class="value">
+                                            <td class="value" id = "product_color">
                                                 <select title="box_style" data-attributetype="box_style"
                                                         data-id="pa_color"
                                                         class="attribute-select " name="attribute_pa_color"
@@ -2016,22 +2014,39 @@
                                                 <a class="reset_variations" href="#"
                                                    style="visibility: hidden;">Clear</a></td>
                                         </tr>
+                                        <tr>
+                                        <td class="label">
+                                            <label for="product_size">Size</label>
+                                        </td>
+                                        <td class="value" id="product_size">
+                                            <select name="attribute_pa_size" id="product_size_select" style="min-width: 200px; padding-right: 20px; box-sizing: border-box;"
+                                              data-price-newborn = "1999"
+                                              data-price-2-3 = "2999"
+                                              data-price-3-4 = "3999"
+                                              data-price-4-5 = "4999">
+                                                <option value="newborn">Newborn baby</option>
+                                                <option value="2-3">2 to 3 years</option>
+                                                <option value="3-4">3 to 4 years</option>
+                                                <option value="4-5">4 to 5 years</option>
+                                            </select>
+                                        </td>
+                                    </tr>
                                         </tbody>
                                     </table>
                                     <div class="single_variation_wrap">
                                         <div class="kodory-variation single_variation"></div>
                                         <div class="kodory-variation-add-to-cart variations_button ">
-                                            <div class="quantity">
-                                                <span class="qty-label">Quantiy:</span>
+                                            <div class="quantity" id = 'product_quantity'>
+                                                <span class="qty-label">Quantity:</span>
                                                 <div class="control">
                                                     <a class="btn-number qtyminus quantity-minus" href="#">-</a>
-                                                    <input type="text" data-step="1" name="quantity[25]" value="0" title="Qty" class="input-qty input-text qty text" size="4" pattern="[0-9]*">
+                                                    <input type="number" data-step="1" name="quantity[25]" value="1" title="Qty" class="input-qty input-text qty text" size="4" pattern="[1-9]*" min='1' step="1">
                                                     <a class="btn-number qtyplus quantity-plus" href="#">+</a>
                                                 </div>
                                             </div>
-                                            <button type="submit"
-                                                    class="single_add_to_cart_button button alt kodory-variation-selection-needed">
-                                                Add to cart
+                                            <button type="button"
+                                                    class="single_add_to_cart_button button alt kodory-variation-selection-needed" id = "order">
+                                                Order on WhatsApp
                                             </button>
                                             <input name="add-to-cart" value="27" type="hidden">
                                             <input name="product_id" value="27" type="hidden">
@@ -2064,7 +2079,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <span class="sku_wrapper">SKU: <span class="sku">885B712</span></span>
+                                    <span class="sku_wrapper">SKU: <span class="sku" id = "product_SKU">885B712</span></span>
                                     <span class="posted_in">Categories: <a
                                             href="#"
                                             rel="tag">Clothing</a>, <a
@@ -2825,5 +2840,7 @@
 <script src="assets/js/jquery-ui.min.js"></script>
 <script src="assets/js/mobilemenu.js"></script>
 <script src="assets/js/functions.js"></script>
+<script src="assets/js/Dynamic-amount.js"></script>
+<script src="assets/js/Whatsapp-integerate.js"></script>
 </body>
 </html>

@@ -431,4 +431,37 @@
             kodory_better_equal_elems($('.equal-container.better-height'));
         }
     });
+
+    /*---------User-implemented functions.-------------*/
+
+    // It prevents user from selecting 0 as input in the quantity field for products.  
+
+    document.querySelectorAll('.input-qty').forEach(input => {
+    // Prevent typing 0 or negative numbers
+    input.addEventListener('input', function() {
+        let value = parseInt(this.value);
+        if (!value || value < 1) {
+            this.value = 1;
+        }
+    });
+    
+    // Optional: handle form submission to ensure quantity >= 1
+    input.closest('form')?.addEventListener('submit', function(e) {
+        if (parseInt(input.value) < 1) {
+            input.value = 1;
+        }
+    });
+});
+
+//disables product page's "Order on WhatsApp" Button, when a product is in out of stock.
+document.addEventListener('DOMContentLoaded', function(){
+    const button = document.getElementById('order')
+    const avail = document.getElementById('product_avail').textContent; 
+    if (avail == "Out of Stock"){
+        button.disabled = true; 
+    }else{
+        button.disabled = false; 
+    }; 
+});
+
 })(jQuery); // End of use strict
