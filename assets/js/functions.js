@@ -464,4 +464,74 @@ document.addEventListener('DOMContentLoaded', function(){
     }; 
 });
 
+//shows tooltip on color swatches by fetching them from options element on *product.html page. 
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.change-value.color').forEach(swatch => {
+        const value = swatch.dataset.value;
+
+        const option = document.querySelector(
+            `select[name="attribute_pa_color"] option[value="${value}"]`
+        );
+
+        if (option) {
+            swatch.setAttribute('title', option.text.trim());
+        }
+    });
+});
+
+//Swatch click and select handler, it also stores selected color in localStorage. 
+const colorSelect = document.querySelector(
+    'select[name="attribute_pa_color"]'
+);
+
+document.querySelectorAll('.change-value.color').forEach(swatch => {
+    swatch.addEventListener('click', function () {
+        const selectedValue = this.dataset.value;
+
+        //Remove active from ALL swatches
+        document.querySelectorAll('.change-value.color')
+            .forEach(s => s.classList.remove('active'));
+
+        //Activate ONLY the clicked swatch
+        this.classList.add('active');
+
+        //Save selection
+        localStorage.setItem('selectedColor', selectedValue);
+
+        //Sync with select dropdown (Woo compatibility)
+        const select = document.querySelector(
+            'select[name="attribute_pa_color"]'
+        );
+
+        if (select) {
+            select.value = selectedValue;
+            select.dispatchEvent(new Event('change', { bubbles: true }));
+        }
+    });
+});
+
+//Restores color on reload
+
+document.addEventListener('DOMContentLoaded', function () {
+    const savedColor = localStorage.getItem('selectedColor');
+
+    if (!savedColor) return;
+
+    const colorSelect = document.querySelector(
+        'select[name="attribute_pa_color"]'
+    );
+
+    colorSelect.value = savedColor;
+    colorSelect.dispatchEvent(new Event('change'));
+
+    // Optional: visually mark swatch
+    document.querySelectorAll('.change-value.color').forEach(swatch => {
+        swatch.classList.toggle(
+            'active',
+            swatch.dataset.value === savedColor
+        );
+    });
+});
+
+
 })(jQuery); // End of use strict
