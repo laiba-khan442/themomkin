@@ -453,7 +453,7 @@
     });
 });
 
-//disables product page's "Order on WhatsApp" Button, when a product is in out of stock.
+//disables product page's "Order on WhatsApp" Button, when a product is out of stock.
 document.addEventListener('DOMContentLoaded', function(){
     const button = document.getElementById('order')
     const avail = document.getElementById('product_avail').textContent; 

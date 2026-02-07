@@ -1,0 +1,16 @@
+{
+ "posts": [
+    {
+        "slug": "Test-blog",
+        "title": "This is a test blog", 
+        "date": "02 Feb, 2026", 
+        "content": "<p>Lore ipsum dolor sit amet, consectetur adipiscing elit. Malesuada sodales quisque litora dapibus primis lacinia condimentum non mauris, rutrum duis vitae fringilla vulputate nulla neque. Per convallis pulvinar sem faucibus blandit commodo nec vulputate, class fames accumsan duis eleifend quisque phasellus.</p>"
+    }, 
+    {
+        "slug": "Test-blog-2", 
+        "title": "This is another test blog",
+        "date": "03 Feb, 2026", 
+        "content":"<p>Lore ipsum dolor sit amet, consectetur adipiscing elit. Malesuada sodales quisque litora dapibus primis lacinia condimentum non mauris, rutrum duis vitae fringilla vulputate nulla neque. Per convallis pulvinar sem faucibus blandit commodo nec vulputate, class fames accumsan duis eleifend quisque phasellus.</p>"
+    }
+ ]
+}
