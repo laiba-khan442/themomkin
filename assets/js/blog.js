@@ -23,9 +23,9 @@ fetch("data/blogs.json")
     // 4. Inject content
     document.getElementById("page-title").textContent = post.title;
     document.getElementById("post-title").textContent = post.title;
-   // document.getElementById("post-date").textContent = post.date;
-   // document.getElementById("post-image").src = post.image;
-  //  document.getElementById("post-image").alt = post.title;
+    document.getElementById("date").textContent = post.date;
+    document.getElementById("post-image").src = post.image;
+    document.getElementById("post-image").alt = post.title; 
     document.getElementById("post-content").innerHTML = post.content;
   })
   .catch(err => {
