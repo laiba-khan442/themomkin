@@ -5,7 +5,7 @@ console.log("Slug from URL:", slug);
 // Optional: handle missing slug
 if (!slug) {
   console.error("Fetch or parsing error:", err);
-  document.body.innerHTML = "<h2>Debug: failed to load blog data1</h2>";
+  document.body.innerHTML = "<h2>Debug: failed to load blog data</h2>";
 }
 
 // 2. Fetch JSON data
@@ -17,7 +17,7 @@ fetch("data/blogs.json")
 
     if (!post) {
       console.error("Fetch or parsing error:", err);
-      document.body.innerHTML = "<h2>Debug: failed to load blog data2</h2>";
+      document.body.innerHTML = "<h2>Debug: failed to load blog data</h2>";
     }
 
     // 4. Inject content
@@ -30,5 +30,5 @@ fetch("data/blogs.json")
   })
   .catch(err => {
     console.error("Fetch or parsing error:", err);
-  document.body.innerHTML = "<h2>Debug: failed to load blog data3</h2>";
+  document.body.innerHTML = "<h2>Debug: failed to load blog data</h2>";
   });
