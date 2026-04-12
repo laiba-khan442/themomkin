@@ -2182,7 +2182,7 @@ th, td {
     padding: 0 20px 0 20px;
 }
 .box-header-nav .main-menu > .menu-item .submenu.megamenu > div {
-    padding: 35px 20px;
+    padding: 35px 10px;
     margin: 0;
 }
 .box-header-nav .main-menu > .menu-item .submenu.megamenu > div > .row {
@@ -15791,4 +15791,21 @@ body .kodory-mapper .text__area {
 .main-container-solid-header {
     padding-top: 125px;
     padding-bottom: 70px;
+}
+
+/* user created classes */
+#product_size_select {
+  color: #333 !important;
+  -webkit-text-fill-color: #333 !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='20' viewBox='0 0 24 24' width='20'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+#product_size_select option {   
+    display: inline-block !important;
+    color: #333;
 }

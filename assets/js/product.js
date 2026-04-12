@@ -129,8 +129,12 @@ function renderColors(colors) {
   }
 
   const select = colorCell.querySelector('select[name="attribute_pa_color"]');
+  if (!select) {
+  console.error("Color select dropdown not found");
+  return;
+}
   const swatchContainer = colorCell.querySelector(".attribute-pa_color");
-  const resetLink = colorCell.querySelector(".reset_variations");
+  // const resetLink = colorCell.querySelector(".reset_variations");
 
   if (!select || !swatchContainer) {
     return;
@@ -182,34 +186,35 @@ function renderColors(colors) {
 
     if (hasValue) {
       localStorage.setItem("selectedColor", selectedValue);
-      if (resetLink) {
-        resetLink.style.visibility = "visible";
-      }
+    //  if (resetLink) {
+      //  resetLink.style.visibility = "visible";
+    //  }
     } else {
       localStorage.removeItem("selectedColor");
-      if (resetLink) {
-        resetLink.style.visibility = "hidden";
-      }
+    //  if (resetLink) {
+    //    resetLink.style.visibility = "hidden";
+    //  }
     }
   };
 
   swatchContainer.querySelectorAll(".change-value.color").forEach((swatch) => {
-    swatch.addEventListener("click", function () {
-      applyColorSelection(this.dataset.value);
-      select.dispatchEvent(new Event("change", { bubbles: true }));
-    });
+  swatch.addEventListener("click", function () {
+    if (!select) return; // ✅ safety check
+
+    const current = select.value || "";
+    const clicked = this.dataset.value || "";
+
+    const newValue = current === clicked ? "" : clicked;
+
+    applyColorSelection(newValue);
+
+    select.dispatchEvent(new Event("change", { bubbles: true }));
+  });
   });
 
   select.addEventListener("change", function () {
     applyColorSelection(this.value);
   });
-
-  if (resetLink) {
-    resetLink.addEventListener("click", function (event) {
-      event.preventDefault();
-      applyColorSelection("");
-    });
-  }
 
   const savedColor = localStorage.getItem("selectedColor");
   const defaultColor = colors[0]?.value || "";
@@ -293,6 +298,7 @@ function populateProduct(product) {
   setText("product_name", productName);
   setText("product_avail", product.product_avail || "");
   setText("product_SKU", product.product_SKU || "");
+  setText("product_categories", product.product_categories || "");
   setText("product_descript_header", product.product_descript_header || "");
 
   setHtml("product_short_descript", product.product_short_descript || "");

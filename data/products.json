@@ -8,6 +8,7 @@
       "product_avail": "In Stock",
       "product_short_descript": "<p>A soft cotton romper made for everyday comfort and easy movement.</p><ul><li>Breathable cotton fabric</li><li>Gentle on baby skin</li><li>Easy snap-button closure</li></ul>",
       "product_SKU": "TMK-RMP-001",
+      "product_categories" : "Baby clothes, romper, every-day wear, comfortable clothing",
       "product_image": "assets/images/test-product-1.jpg",
       "product_descript_header": "Soft, playful, and comfy",
       "product_long_descript": "<p>The Sunny Bear Romper is designed for babies who need all-day comfort. It uses lightweight fabric with a gentle feel, making it a practical choice for naps, playtime, and daily wear.</p><p>The relaxed fit helps movement, while the snap buttons make changing quick and simple for parents.</p>",
@@ -59,7 +60,28 @@
       "product_descript_header": "A soft essential for little ones",
       "product_long_descript": "<p>The Cloud Dream Blanket is a simple comfort item for babies and toddlers. It is lightweight enough for regular use and soft enough to become a favorite comfort companion.</p><p>This product has no color or size variation, which makes it a useful test case for optional variation handling.</p>",
       "descript_img": "assets/images/test-product-2.jpg",
-      "colors": [],
+      "colors": [
+        {
+          "label": "Midnight Blue",
+          "value": "Midnight Blue",
+          "hex": "#3155e2"
+        },
+        {
+          "label": "Moss Green",
+          "value": "Moss Green",
+          "hex": "#52b745"
+        },
+        {
+          "label": "Hot Pink",
+          "value": "Hot Pink",
+          "hex": "#ed71a3"
+        },
+        {
+          "label": "Black",
+          "value": "Black",
+          "hex": "#000000"
+        }
+      ],
       "sizes": []
     }
   ]

@@ -11,7 +11,7 @@ function openWhatsApp() {
     const quantity = parseInt(qtyInput.value, 10);
     let size1 = document.getElementById('product_size_select').value;
     let size; if (size1 == "newborn"){
-      size = `Size: ${size1} baby\n`; 
+      size = `${size1} baby\n`; 
     }else{ size = `${size1} years\n`};
     
     const savedColor = localStorage.getItem('selectedColor');

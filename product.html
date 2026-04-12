@@ -1921,6 +1921,7 @@
                                             </div>
                                         </figure>
                                     </div>
+                                    <!--Hidden image gallery
                                     <ol class="flex-control-nav flex-control-thumbs">
                                         <li><img
                                                 src="assets/images/apro131-2-100x100.jpg"
@@ -1938,7 +1939,7 @@
                                                 src="assets/images/apro133-1-100x100.jpg"
                                                 alt="img">
                                         </li>
-                                    </ol>
+                                    </ol> -->
                                 </div>
                             </div>
                             <div class="summary entry-summary">
@@ -1951,21 +1952,13 @@
                                     Availability: <span id = "product_avail">In Stock</span>
                                 </p>
                                 <div class="kodory-product-details__short-description" id = "product_short_descript">
-                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                                        turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor
-                                        sit amet, ante.</p>
-                                    <ul>
-                                        <li>Water-resistant fabric with soft lycra detailing inside</li>
-                                        <li>CLean zip-front, and three piece hood</li>
-                                        <li>Subtle branding and diagonal panel detail</li>
-                                    </ul>
                                 </div>
                                 <form class="variations_form cart">
                                     <table class="variations">
                                         <tbody>
                                         <tr>
                                             <td class="label"><label>Color</label></td>
-                                            <td class="value" id = "product_color">
+                                            <td class="value" id = "product_color" style="display: flex; gap: 10px">
                                                 <select title="box_style" data-attributetype="box_style"
                                                         data-id="pa_color"
                                                         class="attribute-select " name="attribute_pa_color"
@@ -2087,15 +2080,8 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <span class="sku_wrapper">SKU: <span class="sku" id = "product_SKU">885B712</span></span>
-                                    <span class="posted_in">Categories: <a
-                                            href="#"
-                                            rel="tag">Clothing</a>, <a
-                                            href="#" rel="tag">New arrivals</a>, <a
-                                            href="#" rel="tag">Footwear</a></span>
-                                    <span class="tagged_as">Tags: <a href="#"
-                                                                     rel="tag">Clothing</a>, <a
-                                            href="#" rel="tag">Sock</a></span>
+                                    <span class="sku_wrapper">SKU: <span class="sku" id ="product_SKU"></span></span>
+                                    <span class="posted_in">Categories: <div id="product_categories" style="display:inline; color: #363636"></div></span>
                                 </div>
                                 <div class="kodory-share-socials">
                                     <h5 class="social-heading">Share: </h5>
@@ -2112,20 +2098,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="kodory-tabs kodory-tabs-wrapper">
-                        <ul class="tabs dreaming-tabs" role="tablist">
-                            <li class="description_tab active" id="tab-title-description" role="tab"
-                                aria-controls="tab-description">
-                                <a href="#tab-description">Description</a>
-                            </li>
-                            <li class="additional_information_tab" id="tab-title-additional_information" role="tab"
-                                aria-controls="tab-additional_information">
-                                <a href="#tab-additional_information">Additional information</a>
-                            </li>
-                            <li class="reviews_tab" id="tab-title-reviews" role="tab" aria-controls="tab-reviews">
-                                <a href="#tab-reviews">Reviews (0)</a>
-                            </li>
-                        </ul>
+                    <div class="col-md-12 col-sm-12 dreaming_related-product">
+                    <div class="block-title">
+                    <h2 class="product-grid-title">
+                       Additional Details
+                        <span></span>
+                    </h2>
                         <div class="kodory-Tabs-panel kodory-Tabs-panel--description panel entry-content kodory-tab"
                              id="tab-description" role="tabpanel" aria-labelledby="tab-title-description">
                             <h2>Description</h2>
@@ -2152,6 +2130,7 @@
                              id="tab-additional_information" role="tabpanel"
                              aria-labelledby="tab-title-additional_information">
                             <h2>Additional information</h2>
+                            <!--colors section and addition information is commented out    
                             <table class="shop_attributes">
                                 <tbody>
                                 <tr>
@@ -2160,8 +2139,9 @@
                                     </td>
                                 </tr>
                                 </tbody>
-                            </table>
+                            </table> -->
                         </div>
+                        <!--reviews are commented out
                         <div class="kodory-Tabs-panel kodory-Tabs-panel--reviews panel entry-content kodory-tab"
                              id="tab-reviews" role="tabpanel" aria-labelledby="tab-title-reviews">
                             <div id="reviews" class="kodory-Reviews">
@@ -2216,12 +2196,12 @@
                                                     <input name="comment_parent" id="comment_parent" value="0"
                                                            type="hidden">
                                                 </p></form>
-                                        </div><!-- #respond -->
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="clear"></div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
