@@ -48,8 +48,17 @@
     }
 
     function kodory_video() {
-        $('.buttonvideo').simpleLightboxVideo();
-    }
+    $('.buttonvideo').on('click', function(e) {
+        e.preventDefault();
+        $('#videoModal').show();
+    });
+
+    $('#closeVideoModal').on('click', function() {
+        const video = $('#localVideo').get(0);
+        video.pause();
+        $('#videoModal').hide();
+    });
+}
 
     function kodory_title_tooltip() {
         $(".kodory-tooltip").mousemove(function (event) {
