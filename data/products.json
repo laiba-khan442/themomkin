@@ -1,0 +1,88 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "slug": "sunny-bear-romper",
+      "product_name": "Sunny Bear Romper",
+      "product_amount": "1999",
+      "product_avail": "In Stock",
+      "product_short_descript": "<p>A soft cotton romper made for everyday comfort and easy movement.</p><ul><li>Breathable cotton fabric</li><li>Gentle on baby skin</li><li>Easy snap-button closure</li></ul>",
+      "product_SKU": "TMK-RMP-001",
+      "product_categories" : "Baby clothes, romper, every-day wear, comfortable clothing",
+      "product_image": "assets/images/test-product-1.jpg",
+      "product_descript_header": "Soft, playful, and comfy",
+      "product_long_descript": "<p>The Sunny Bear Romper is designed for babies who need all-day comfort. It uses lightweight fabric with a gentle feel, making it a practical choice for naps, playtime, and daily wear.</p><p>The relaxed fit helps movement, while the snap buttons make changing quick and simple for parents.</p>",
+      "descript_img": "assets/images/test-product-1.jpg",
+      "colors": [
+        {
+          "label": "Midnight Blue",
+          "value": "Midnight Blue",
+          "hex": "#3155e2"
+        },
+        {
+          "label": "Moss Green",
+          "value": "Moss Green",
+          "hex": "#52b745"
+        },
+        {
+          "label": "Hot Pink",
+          "value": "Hot Pink",
+          "hex": "#ed71a3"
+        }
+      ],
+      "sizes": [
+        {
+          "label": "Newborn baby",
+          "value": "newborn",
+          "price": "1999"
+        },
+        {
+          "label": "2 to 3 years",
+          "value": "2-3",
+          "price": "2499"
+        },
+        {
+          "label": "3 to 4 years",
+          "value": "3-4",
+          "price": "2899"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "slug": "cloud-dream-blanket",
+      "product_name": "Cloud Dream Blanket",
+      "product_amount": "1599",
+      "product_avail": "In Stock",
+      "product_short_descript": "<p>A cozy baby blanket made for naps, stroller time, and cuddle moments.</p><ul><li>Soft plush texture</li><li>Lightweight and warm</li><li>Simple everyday essential</li></ul>",
+      "product_SKU": "TMK-BLK-002",
+      "product_image": "assets/images/test-product-2.jpg",
+      "product_descript_header": "A soft essential for little ones",
+      "product_long_descript": "<p>The Cloud Dream Blanket is a simple comfort item for babies and toddlers. It is lightweight enough for regular use and soft enough to become a favorite comfort companion.</p><p>This product has no color or size variation, which makes it a useful test case for optional variation handling.</p>",
+      "descript_img": "assets/images/test-product-2.jpg",
+      "colors": [
+        {
+          "label": "Midnight Blue",
+          "value": "Midnight Blue",
+          "hex": "#3155e2"
+        },
+        {
+          "label": "Moss Green",
+          "value": "Moss Green",
+          "hex": "#52b745"
+        },
+        {
+          "label": "Hot Pink",
+          "value": "Hot Pink",
+          "hex": "#ed71a3"
+        },
+        {
+          "label": "Black",
+          "value": "Black",
+          "hex": "#000000"
+        }
+      ],
+      "sizes": []
+    }
+  ]
+}

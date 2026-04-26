@@ -48,8 +48,17 @@
     }
 
     function kodory_video() {
-        $('.buttonvideo').simpleLightboxVideo();
-    }
+    $('.buttonvideo').on('click', function(e) {
+        e.preventDefault();
+        $('#videoModal').show();
+    });
+
+    $('#closeVideoModal').on('click', function() {
+        const video = $('#localVideo').get(0);
+        video.pause();
+        $('#videoModal').hide();
+    });
+}
 
     function kodory_title_tooltip() {
         $(".kodory-tooltip").mousemove(function (event) {
@@ -168,7 +177,16 @@
         $elem.not('.slick-initialized').each(function () {
             var _this = $(this),
                 _responsive = _this.data('responsive'),
-                _config = [];
+                _config ={};
+                    _config.infinite = true;
+                    _config.autoplay = true;
+                    _config.autoplaySpeed = 4000;
+                    _config.speed = 500;
+                    _config.slidesToShow = 1;
+                    _config.slidesToScroll = 1;
+                    _config.pauseOnHover = false;
+                    _config.responsive = _responsive;
+                
             if (_this.hasClass('slick-vertical')) {
                 _config.prevArrow = '<span class="fa fa-angle-up prev"></span>';
                 _config.nextArrow = '<span class="fa fa-angle-down next"></span>';
@@ -453,7 +471,7 @@
     });
 });
 
-//disables product page's "Order on WhatsApp" Button, when a product is in out of stock.
+//disables product page's "Order on WhatsApp" Button, when a product is out of stock.
 document.addEventListener('DOMContentLoaded', function(){
     const button = document.getElementById('order')
     const avail = document.getElementById('product_avail').textContent; 

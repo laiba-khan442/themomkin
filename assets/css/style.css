@@ -2182,7 +2182,7 @@ th, td {
     padding: 0 20px 0 20px;
 }
 .box-header-nav .main-menu > .menu-item .submenu.megamenu > div {
-    padding: 35px 20px;
+    padding: 35px 10px;
     margin: 0;
 }
 .box-header-nav .main-menu > .menu-item .submenu.megamenu > div > .row {
@@ -11267,7 +11267,7 @@ body.error404 .header {
     font-weight: 700;
     line-height: 1.2;
     position: relative;
-    color: #a8dadc;
+    color: #ed71a3;
     display: inline-block;
     text-transform: uppercase;
 }
@@ -11275,11 +11275,10 @@ body.error404 .header {
     font-size: 36px;
     font-weight: 400;
     margin-bottom: 30px;
-    text-transform: uppercase;
     color: #363636;
 }
 .kodory-banner.style-11 .button {
-    background-color: #ed71a3;
+    background-color: #a8dadc;
 }
 /*.kodory-banner.style-12*/
 .kodory-banner.style-12 .banner-thumb {
@@ -15791,4 +15790,57 @@ body .kodory-mapper .text__area {
 .main-container-solid-header {
     padding-top: 125px;
     padding-bottom: 70px;
+}
+
+/* user created classes */
+#product_size_select {
+  color: #333 !important;
+  -webkit-text-fill-color: #333 !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+  
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='20' viewBox='0 0 24 24' width='20'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+#product_size_select option {   
+    display: inline-block !important;
+    color: #333;
+}
+
+#videoModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 9999;
+}
+
+.video-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.video-modal-content video {
+    display: block;
+    max-width: 90vw;
+    height: auto;
+}
+
+#closeVideoModal {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.tiktok-icon {
+    width: 26px;
+    height: 26px;
+    fill: #fff;
 }

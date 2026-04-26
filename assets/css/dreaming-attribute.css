@@ -58,6 +58,12 @@
 }
 .variations .data-val .change-value {
 	display: inline-block;
+	width: 20px;
+	height: 70px;
+	display: inline-block;
+	margin: 3px;
+	 /* gives breathing room */
+	box-sizing: border-box;
 }
 .variations .data-val .color {
 	position: relative;
