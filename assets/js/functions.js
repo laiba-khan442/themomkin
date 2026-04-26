@@ -177,7 +177,16 @@
         $elem.not('.slick-initialized').each(function () {
             var _this = $(this),
                 _responsive = _this.data('responsive'),
-                _config = [];
+                _config ={};
+                    _config.infinite = true;
+                    _config.autoplay = true;
+                    _config.autoplaySpeed = 4000;
+                    _config.speed = 500;
+                    _config.slidesToShow = 1;
+                    _config.slidesToScroll = 1;
+                    _config.pauseOnHover = false;
+                    _config.responsive = _responsive;
+                
             if (_this.hasClass('slick-vertical')) {
                 _config.prevArrow = '<span class="fa fa-angle-up prev"></span>';
                 _config.nextArrow = '<span class="fa fa-angle-down next"></span>';
