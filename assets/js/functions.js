@@ -182,7 +182,7 @@
                     _config.autoplay = true;
                     _config.autoplaySpeed = 4000;
                     _config.speed = 500;
-                    _config.slidesToShow = 1;
+                    _config.slidesToShow = 1; 
                     _config.slidesToScroll = 1;
                     _config.pauseOnHover = false;
                     _config.responsive = _responsive;
